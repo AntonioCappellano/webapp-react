@@ -15,7 +15,7 @@ export default function MoviesIndex() {
 
   return (
     <>
-      <h1>BookIndex</h1>
+      <h1>Catalogo Film</h1>
       <MovieList movies={movies} />
     </>
   );

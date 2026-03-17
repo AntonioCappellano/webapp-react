@@ -3,10 +3,10 @@ import { NavLink, Outlet } from "react-router";
 export default function DefaultTemplate() {
   return (
     <>
-      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
         <div className="container">
           <a className="navbar-brand" href="#">
-            Movies
+            Film
           </a>
           <button
             className="navbar-toggler"
