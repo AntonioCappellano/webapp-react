@@ -1,3 +1,3 @@
 export default function MoviesIndex() {
-  return <h1>MoviesDetail</h1>;
+  return <h1>Dettagli film</h1>;
 }

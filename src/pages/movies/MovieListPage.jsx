@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
+import MovieList from "../../components/MovieList";
 
 export default function MoviesIndex() {
   const [movies, setMovies] = useState([]);
@@ -15,6 +16,7 @@ export default function MoviesIndex() {
   return (
     <>
       <h1>BookIndex</h1>
+      <MovieList movies={movies} />
     </>
   );
 }
