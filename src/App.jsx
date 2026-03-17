@@ -1,5 +1,17 @@
+import { BrowserRouter, Route, Routes } from "react-router";
+import DefaultTemplate from "./templates/DefaultTemplate";
+import Homepage from "./pages/HomePage";
+
 function App() {
-  return <h1>Hello World</h1>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route Component={DefaultTemplate}>
+          <Route index Component={Homepage} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
