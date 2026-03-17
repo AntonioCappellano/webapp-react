@@ -27,7 +27,7 @@ export default function DefaultTemplate() {
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink to="/books" className="nav-link" aria-current="page">
+                <NavLink to="/movies" className="nav-link" aria-current="page">
                   Catalogo Film
                 </NavLink>
               </li>
