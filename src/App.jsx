@@ -10,10 +10,10 @@ function App() {
       <Routes>
         <Route Component={DefaultTemplate}>
           <Route index Component={Homepage} />
-          
+
           <Route path="movies">
             <Route index Component={MovieListPage} />
-            <Route path=":id" Component={MovieDetailPage} />
+            <Route path=":id" Component={MovieDetailPage} />    
           </Route>
         </Route>
       </Routes>
