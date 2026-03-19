@@ -1,8 +1,11 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router";
+import ReviewCard from "../../components/ReviewCard";
+import ReviewForm from "../../components/ReviewForm";
 
 export default function MoviesDetailPage() {
+  
   const { id } = useParams();
   const [detail, setDetail] = useState(null);
 
@@ -42,16 +45,11 @@ export default function MoviesDetailPage() {
           <h3>Recensioni</h3>
 
           {detail.reviews.map((review) => (
-            <div key={review.id} className="card">
-              <div className="card-body px-0">
-                <h6 className="fw-bold">Nome: {review.name}</h6>
-                <p className="card-text">Commento: {review.text}</p>
-                <p className="badge bg-warning text-dark">
-                  Voto: {review.vote}/5
-                </p>
-              </div>
-            </div>
+            <ReviewCard key={review.id} review={review} />
           ))}
+        </div>
+        <div>
+          <ReviewForm movieId={id} afterFormSubmit={fetchDetail} />
         </div>
       </div>
     </div>
